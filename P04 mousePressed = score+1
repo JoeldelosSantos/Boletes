@@ -1,0 +1,13 @@
+int x=0;
+void setup(){
+  size(600,400);
+}
+
+void draw(){
+  background(0);
+  String score = "Score:"+x;
+    text(score,500,50);
+  if(mousePressed==true){
+    x=x+1;
+  }
+}
