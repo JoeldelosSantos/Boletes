@@ -1,0 +1,31 @@
+int ellipse = 0;
+int a = 1;
+int x=0;
+int y=100;
+void setup(){
+  size(500,200);
+}
+
+void draw(){
+  background(200);
+  ellipse(ellipse,y,50,50);
+  fill(250,0,0);
+  ellipse = ellipse + a;
+  ellipse=ellipse+a;
+  if (ellipse>500){
+  a = - 1;
+  }
+  if (ellipse<1){
+    a= +1;
+  }
+  if(ellipse==250){
+    a=a*2;
+  }
+    
+String score = "Score:"+x;
+    text(score,435,25);
+  if(mousePressed==true){
+    if(mouseX>ellipse-50 && mouseX<ellipse+50 && mouseY>y-50 && mouseY<y+50)
+    x=x+1;
+    }
+}
