@@ -1,0 +1,16 @@
+int a=0;
+int b=0;
+void setup(){
+  size(600,400);
+}
+
+void draw(){
+  background(250);
+  fill(250,0,0);
+
+if (mousePressed==true){
+a=mouseX;
+b=mouseY;
+}
+  rect(a,b,mouseX-a,mouseY-b);
+}
